@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+body {
+    background-image: url(../img/backg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat";
+}
+
+.main {
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-item: center;
+    margin: 10px 0px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1.5px solid rgba(255, 255, 255, 0.326);
+    color: #fff;
+    padding: 8px;
+  }
+
+.input:focus {
+    font-size: 17px;
+}
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+.boton {
+	background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+	box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+	border-radius: 12px;
+	display: inline-block;
+	border: 1.5px solid rgba(255, 255, 255, 0.326);
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 13px;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+.boton:hover {
+	background-color: transparent;
+}
+
+.boton:active {
+	position: relative;
+	top: 1px;
+}
+
+.notes_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 38px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.notes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+@media screen and (max-width: 900px) {
+    .notes {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .notes {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}
