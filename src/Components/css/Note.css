@@ -46,7 +46,7 @@
     color: #fff;
     padding: 4px 10px;
     font-size: 13px;
-    cursor: poninter;
+    cursor: pointer;
 }
 
 .note_save:hover {
@@ -59,10 +59,10 @@
     cursor: pointer;
 }
 
-.note_delete: hover {
+.note_delete:hover {
     transform: scale(1.1);
 }
 
 .char_progress {
-    background-color: #fff !important;
+    background-color: #fff!important;
 }
