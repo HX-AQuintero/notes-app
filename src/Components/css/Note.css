@@ -20,6 +20,12 @@
     margin-bottom: 15px;
 }
 
+.note_check {
+    background: #e6e6e6;
+    border: 0px solid #ffff;
+    border-radius: 70px;
+}
+
 .note textarea {
     white-space: pre-wrap;
     background: transparent;
