@@ -14,7 +14,7 @@ function Header () {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(!title){
-            setText("Undefined");
+            setText("Enter title");
             setFlag(true);
             setTitle("");
         }
@@ -36,7 +36,7 @@ function Header () {
             setText(data);
             setFlag(true)
         } else {
-            setText("Undefined");
+            setText("Enter title");
             setFlag(true)
         }
       }, []);
